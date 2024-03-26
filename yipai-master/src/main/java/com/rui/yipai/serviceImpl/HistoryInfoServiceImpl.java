@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 
 /**
@@ -38,7 +39,9 @@ public class HistoryInfoServiceImpl extends ServiceImpl<HistoryInfoMapper, Histo
         HashMap<String, Object> hashMap = new HashMap<>();
         int oid = (Integer)request.getSession().getAttribute("oid");
         historyInfo.setUserInfoOid(oid);
-        historyInfo.setCreateTime("" + Calendar.getInstance().get(Calendar.YEAR));
+        Date date = new Date();
+        String time = String.format("%tF", date);
+        historyInfo.setCreateTime(time);
         historyInfoMapper.insert(historyInfo);
         hashMap.put("success",true);
         hashMap.put("msg","创建成功！");
@@ -72,7 +75,8 @@ public class HistoryInfoServiceImpl extends ServiceImpl<HistoryInfoMapper, Histo
         historyInfoPage.setSize(limit);
 
         QueryWrapper<HistoryInfo> queryWrapper = new QueryWrapper<>();
-
+        int oid = (Integer)request.getSession().getAttribute("oid");
+        queryWrapper.eq("user_oid",oid);
         Page<HistoryInfo> historyInfoPage1 = historyInfoMapper.selectPage(historyInfoPage, queryWrapper);
         hashMap.put("success",true);
         hashMap.put("msg","修改成功！");

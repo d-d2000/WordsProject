@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -46,7 +47,7 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
             hashMap.put("msg","账号不存在");
         } else {
             hashMap.put("success",true);
-            hashMap.put("msg","账号不存在");
+            hashMap.put("msg","登陆成功！");
             hashMap.put("data",userInfos.get(0));
         }
         return  hashMap;
@@ -68,7 +69,9 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
             userInfo.setUserName(userName);
             userInfo.setUserPwd(pwd);
             userInfo.setUserState(true);
-            userInfo.setCreateTime( "" + Calendar.getInstance().get(Calendar.YEAR));
+            Date date = new Date();
+            String time = String.format("%tF", date);
+            userInfo.setCreateTime(time);
             userInfoMapper.insert(userInfo);
             hashMap.put("success",true);
             hashMap.put("msg","创建成功！");

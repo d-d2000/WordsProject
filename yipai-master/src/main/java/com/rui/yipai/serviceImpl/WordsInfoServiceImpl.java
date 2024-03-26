@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 
 /**
@@ -37,8 +38,11 @@ public class WordsInfoServiceImpl extends ServiceImpl<WordsInfoMapper, WordsInfo
 
         int oid = (Integer)request.getSession().getAttribute("oid");
         wordsInfo.setUserInfoOid(oid);
-        wordsInfo.setCreateTime("" + Calendar.getInstance().get(Calendar.YEAR));
+        Date date = new Date();
+        String time = String.format("%tF", date);
+        wordsInfo.setCreateTime(time);
         wordsInfoMapper.insert(wordsInfo);
+
         hashMap.put("success",true);
         hashMap.put("msg","创建成功！");
         hashMap.put("data",wordsInfo);
@@ -71,7 +75,11 @@ public class WordsInfoServiceImpl extends ServiceImpl<WordsInfoMapper, WordsInfo
         wordsInfoPage.setSize(limit);
 
         QueryWrapper<WordsInfo> queryWrapper = new QueryWrapper<>();
-
+        String userName = (String)request.getSession().getAttribute("userName");
+        int oid = (Integer)request.getSession().getAttribute("oid");
+        if(!userName.equals("admin")) {
+            queryWrapper.eq("user_oid",oid);
+        }
         Page<WordsInfo> wordsInfoPage1 = wordsInfoMapper.selectPage(wordsInfoPage, queryWrapper);
         hashMap.put("success",true);
         hashMap.put("msg","修改成功！");

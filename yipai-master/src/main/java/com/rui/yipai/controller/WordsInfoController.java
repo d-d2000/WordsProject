@@ -52,4 +52,12 @@ public class WordsInfoController {
         return wordsInfoMapper.selectRandomWords();
     }
 
+    @RequestMapping("/getCharts")
+    public HashMap<String,Object> getCharts() {
+        HashMap<String,Object> hashMap = new HashMap<>();
+        hashMap.put("stateList",wordsInfoMapper.selectStateWords());
+        hashMap.put("stateList",wordsInfoMapper.selectTimeWords());
+        return hashMap;
+    }
+
 }

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * <p>
@@ -41,12 +42,25 @@ public class UserInfoController {
     }
 
     @RequestMapping("register")
-    public HashMap<String,Object> register(String userName, String pwd) {
-        return userInfoService.register(userName,pwd);
+    public HashMap<String,Object> register(HttpServletRequest request,String userName, String pwd) {
+        HashMap<String, Object> hashMap = userInfoService.register(userName,pwd);
+        UserInfo userInfo = (UserInfo)hashMap.get("data");
+        if(null != userInfo) {
+            HttpSession session = request.getSession();
+            session.setAttribute("userName",userInfo.getUserName());
+            session.setAttribute("password",userInfo.getUserPwd());
+            session.setAttribute("oid",userInfo.getUserOid());
+        }
+        return hashMap;
     }
 
     @RequestMapping("update")
     public HashMap<String,Object> updateUser(UserInfo userInfo) {
         return userInfoService.updateUser(userInfo);
+    }
+
+    @RequestMapping("getAllUser")
+    public List<UserInfo> updateUser() {
+        return userInfoService.list();
     }
 }

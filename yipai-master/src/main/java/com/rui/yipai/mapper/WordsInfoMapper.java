@@ -20,4 +20,10 @@ public interface WordsInfoMapper extends BaseMapper<WordsInfo> {
 
     @Select("SELECT * FROM words_info ORDER BY RAND() LIMIT 20")
     List<WordsInfo> selectRandomWords();
+
+    @Select("select count(new_words) as c1,words_state from words_info where 1 = 1 group by words_state")
+    List<WordsInfo> selectStateWords();
+
+    @Select("select count(new_words) as c2,create_time from words_info where 1 = 1 group by create_time")
+    List<WordsInfo> selectTimeWords();
 }
