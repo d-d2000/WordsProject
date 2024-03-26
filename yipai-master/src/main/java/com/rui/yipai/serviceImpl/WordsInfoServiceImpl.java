@@ -78,7 +78,7 @@ public class WordsInfoServiceImpl extends ServiceImpl<WordsInfoMapper, WordsInfo
         String userName = (String)request.getSession().getAttribute("userName");
         int oid = (Integer)request.getSession().getAttribute("oid");
         if(!userName.equals("admin")) {
-            queryWrapper.eq("user_oid",oid);
+            queryWrapper.eq("user_info_oid",oid);
         }
         Page<WordsInfo> wordsInfoPage1 = wordsInfoMapper.selectPage(wordsInfoPage, queryWrapper);
         hashMap.put("success",true);
