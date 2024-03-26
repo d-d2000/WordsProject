@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan({"com.rui.yipai.mapper","com.rui.yipai.dao"})
+@MapperScan({"com.rui.yipai.mapper"})
 public class MyWordsApplication {
   public static void main(String[] args) {
     SpringApplication.run(MyWordsApplication.class, args);

@@ -25,8 +25,6 @@ import java.util.HashMap;
 @Service
 public class NotepadInfoServiceImpl extends ServiceImpl<NotepadInfoMapper, NotepadInfo> implements NotepadInfoService {
 
-    @Autowired
-    NotepadInfoService notepadInfoService;
 
     @Autowired
     NotepadInfoMapper notepadInfoMapper;
@@ -40,7 +38,7 @@ public class NotepadInfoServiceImpl extends ServiceImpl<NotepadInfoMapper, Notep
         int oid = (Integer)request.getSession().getAttribute("oid");
         notepadInfo.setUserInfoOid(oid);
         notepadInfo.setCreateTime("" + Calendar.getInstance().get(Calendar.YEAR));
-        notepadInfoService.save(notepadInfo);
+        notepadInfoMapper.insert(notepadInfo);
         hashMap.put("success",true);
         hashMap.put("msg","创建成功！");
         return hashMap;

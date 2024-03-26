@@ -25,8 +25,6 @@ import java.util.HashMap;
 @Service
 public class HistoryInfoServiceImpl extends ServiceImpl<HistoryInfoMapper, HistoryInfo> implements HistoryInfoService {
 
-    @Autowired
-    HistoryInfoService historyInfoService;
 
     @Autowired
     HistoryInfoMapper historyInfoMapper;
@@ -41,7 +39,7 @@ public class HistoryInfoServiceImpl extends ServiceImpl<HistoryInfoMapper, Histo
         int oid = (Integer)request.getSession().getAttribute("oid");
         historyInfo.setUserInfoOid(oid);
         historyInfo.setCreateTime("" + Calendar.getInstance().get(Calendar.YEAR));
-        historyInfoService.save(historyInfo);
+        historyInfoMapper.insert(historyInfo);
         hashMap.put("success",true);
         hashMap.put("msg","创建成功！");
         return hashMap;
