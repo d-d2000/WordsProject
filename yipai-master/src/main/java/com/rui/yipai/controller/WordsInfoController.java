@@ -27,6 +27,7 @@ public class WordsInfoController {
     @Autowired
     WordsInfoMapper wordsInfoMapper;
 
+
     @RequestMapping("/add")
     public HashMap<String,Object> addWords(WordsInfo wordsInfo) {
         return wordsInfoService.addWords(wordsInfo);
@@ -56,7 +57,7 @@ public class WordsInfoController {
     public HashMap<String,Object> getCharts() {
         HashMap<String,Object> hashMap = new HashMap<>();
         hashMap.put("stateList",wordsInfoMapper.selectStateWords());
-        hashMap.put("stateList",wordsInfoMapper.selectTimeWords());
+        hashMap.put("timeList",wordsInfoMapper.selectTimeWords());
         return hashMap;
     }
 
