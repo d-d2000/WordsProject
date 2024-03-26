@@ -26,8 +26,6 @@ public class WordsInfoServiceImpl extends ServiceImpl<WordsInfoMapper, WordsInfo
 
 
     @Autowired
-    WordsInfoService wordsInfoService;
-    @Autowired
     WordsInfoMapper wordsInfoMapper;
 
     @Autowired
@@ -40,7 +38,7 @@ public class WordsInfoServiceImpl extends ServiceImpl<WordsInfoMapper, WordsInfo
         int oid = (Integer)request.getSession().getAttribute("oid");
         wordsInfo.setUserInfoOid(oid);
         wordsInfo.setCreateTime("" + Calendar.getInstance().get(Calendar.YEAR));
-        wordsInfoService.save(wordsInfo);
+        wordsInfoMapper.insert(wordsInfo);
         hashMap.put("success",true);
         hashMap.put("msg","创建成功！");
         return hashMap;

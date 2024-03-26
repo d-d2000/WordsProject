@@ -28,7 +28,7 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
 
 
     @Autowired
-    UserInfoService userInfoService;
+    UserInfoMapper userInfoMapper;
 
     @Autowired
     HttpServletRequest request;
@@ -39,7 +39,7 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
         userInfoMapperQueryWrapper.eq("user_name",userName)
                 .eq("user_pwd",pwd)
                 .eq("user_state",1);
-        List<UserInfo> userInfos = userInfoService.list(userInfoMapperQueryWrapper);
+        List<UserInfo> userInfos = userInfoMapper.selectList(userInfoMapperQueryWrapper);
         return  userInfos.get(0);
     }
 
@@ -47,7 +47,7 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
     public HashMap<String,Object> register(String userName, String pwd){
         QueryWrapper<UserInfo> userInfoMapperQueryWrapper = new QueryWrapper<>();
         userInfoMapperQueryWrapper.eq("user_name",userName);
-        List<UserInfo> userInfos = userInfoService.list(userInfoMapperQueryWrapper);
+        List<UserInfo> userInfos = userInfoMapper.selectList(userInfoMapperQueryWrapper);
         boolean flag = null != userInfos.get(0);
         HashMap<String, Object> hashMap = new HashMap<>();
         if(flag) {
@@ -60,7 +60,7 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
             userInfo.setUserPwd(pwd);
             userInfo.setUserState(true);
             userInfo.setCreateTime( "" + Calendar.getInstance().get(Calendar.YEAR));
-            userInfoService.save(userInfo);
+            userInfoMapper.insert(userInfo);
             hashMap.put("success",true);
             hashMap.put("msg","创建成功！");
             hashMap.put("data",userInfo);
@@ -74,7 +74,7 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
         HashMap<String, Object> hashMap = new HashMap<>();
         int oid = (Integer)request.getSession().getAttribute("oid");
         userInfo.setUserOid(oid);
-        userInfoService.updateById(userInfo);
+        userInfoMapper.updateById(userInfo);
         hashMap.put("success",true);
         hashMap.put("msg","创建成功！");
         hashMap.put("data",userInfo);

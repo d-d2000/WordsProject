@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b5ef1-7ae9-4904-aabe-6ccc38cfaeea" name="Default Changelist" comment="112">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/MyWordsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/MyWordsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/serviceImpl/HistoryInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/serviceImpl/HistoryInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/serviceImpl/NotepadInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/serviceImpl/NotepadInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/serviceImpl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/serviceImpl/UserInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/serviceImpl/WordsInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/serviceImpl/WordsInfoServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="a07b5ef1-7ae9-4904-aabe-6ccc38cfaeea" name="Default Changelist" comment="113" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,15 +37,6 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="E:\仓库" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../破解版安装包/apache-maven-3.8.1" />
-        <option name="userSettingsFile" value="E:\破解版安装包\apache-maven-3.8.1\conf\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2e4OTalZ2Rm6JeslFU4X1esE33V" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -70,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/yipai-master/pom.xml" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -111,6 +95,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="YipaiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="yipai" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.rui.yipai.MyWordsApplication" />
@@ -144,7 +139,10 @@
       <workItem from="1711189098455" duration="645000" />
       <workItem from="1711361856853" duration="7828000" />
       <workItem from="1711379222074" duration="6814000" />
-      <workItem from="1711454717883" duration="6011000" />
+      <workItem from="1711454717883" duration="6309000" />
+      <workItem from="1711462950981" duration="56000" />
+      <workItem from="1711463029152" duration="46000" />
+      <workItem from="1711463137267" duration="785000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1711456555876</created>
@@ -167,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711457169210</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="113">
+      <created>1711462322050</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711462322050</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +196,8 @@
     </ignored-roots>
     <MESSAGE value="111" />
     <MESSAGE value="112" />
-    <option name="LAST_COMMIT_MESSAGE" value="112" />
+    <MESSAGE value="113" />
+    <option name="LAST_COMMIT_MESSAGE" value="113" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
