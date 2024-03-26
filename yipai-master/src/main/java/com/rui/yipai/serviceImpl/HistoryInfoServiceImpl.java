@@ -60,6 +60,7 @@ public class HistoryInfoServiceImpl extends ServiceImpl<HistoryInfoMapper, Histo
         historyInfoMapper.updateById(historyInfo);
         hashMap.put("success",true);
         hashMap.put("msg","修改成功！");
+        hashMap.put("msg",historyInfo);
         return hashMap;
     }
 

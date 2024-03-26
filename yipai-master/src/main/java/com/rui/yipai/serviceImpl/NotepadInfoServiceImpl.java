@@ -41,6 +41,7 @@ public class NotepadInfoServiceImpl extends ServiceImpl<NotepadInfoMapper, Notep
         notepadInfoMapper.insert(notepadInfo);
         hashMap.put("success",true);
         hashMap.put("msg","创建成功！");
+        hashMap.put("data",notepadInfo);
         return hashMap;
     }
 

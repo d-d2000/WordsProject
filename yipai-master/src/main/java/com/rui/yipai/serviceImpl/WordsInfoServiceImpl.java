@@ -41,6 +41,7 @@ public class WordsInfoServiceImpl extends ServiceImpl<WordsInfoMapper, WordsInfo
         wordsInfoMapper.insert(wordsInfo);
         hashMap.put("success",true);
         hashMap.put("msg","创建成功！");
+        hashMap.put("data",wordsInfo);
         return hashMap;
     }
 
