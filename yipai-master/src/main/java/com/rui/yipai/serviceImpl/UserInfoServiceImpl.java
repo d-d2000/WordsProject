@@ -34,13 +34,22 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
     HttpServletRequest request;
 
     @Override
-    public UserInfo userLogin(String userName, String pwd) {
+    public HashMap<String,Object> userLogin(String userName, String pwd) {
         QueryWrapper<UserInfo> userInfoMapperQueryWrapper = new QueryWrapper<>();
         userInfoMapperQueryWrapper.eq("user_name",userName)
                 .eq("user_pwd",pwd)
                 .eq("user_state",1);
+        HashMap<String,Object> hashMap = new HashMap<>();
         List<UserInfo> userInfos = userInfoMapper.selectList(userInfoMapperQueryWrapper);
-        return  userInfos.get(0);
+        if(userInfos.size() == 0) {
+            hashMap.put("success",false);
+            hashMap.put("msg","账号不存在");
+        } else {
+            hashMap.put("success",true);
+            hashMap.put("msg","账号不存在");
+            hashMap.put("data",userInfos.get(0));
+        }
+        return  hashMap;
     }
 
     @Override

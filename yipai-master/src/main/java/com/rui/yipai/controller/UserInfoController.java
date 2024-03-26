@@ -28,19 +28,13 @@ public class UserInfoController {
 
     @RequestMapping("login")
     public HashMap<String,Object> userLogin(HttpServletRequest request, String userName, String pwd) {
-        UserInfo userInfo = userInfoService.userLogin(userName, pwd);
-        HashMap<String,Object> hashMap = new HashMap<>();
+        HashMap<String, Object> hashMap = userInfoService.userLogin(userName, pwd);
+        UserInfo userInfo = (UserInfo)hashMap.get("data");
         if(null != userInfo) {
-
             HttpSession session = request.getSession();
             session.setAttribute("userName",userInfo.getUserName());
             session.setAttribute("password",userInfo.getUserPwd());
             session.setAttribute("oid",userInfo.getUserOid());
-            hashMap.put("success",true);
-            hashMap.put("msg","登陆成功！");
-        } else {
-            hashMap.put("success",false);
-            hashMap.put("msg","登陆失败！");
         }
         return hashMap;
 

@@ -15,7 +15,7 @@ import java.util.HashMap;
  */
 public interface UserInfoService extends IService<UserInfo> {
 
-    public UserInfo userLogin(String userName,String pwd);
+    public HashMap<String, Object> userLogin(String userName,String pwd);
 
     public HashMap<String,Object> register(String userName, String pwd);
 
