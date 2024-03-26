@@ -5,7 +5,7 @@ spring:
     database: 0
   datasource:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/yipai?useSSL=false&useUnicode=true&characterEncoding=UTF-8&tinyInt1isBit=false
+      url: jdbc:mysql://localhost:3306/my_words?useSSL=false&useUnicode=true&characterEncoding=UTF-8&tinyInt1isBit=false
       username: root
       password: root
   mvc:

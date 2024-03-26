@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b5ef1-7ae9-4904-aabe-6ccc38cfaeea" name="Default Changelist" comment="113" />
+    <list default="true" id="a07b5ef1-7ae9-4904-aabe-6ccc38cfaeea" name="Default Changelist" comment="113">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yipai-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/controller/WordsInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/controller/WordsInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/mapper/WordsInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yipai-master/src/main/java/com/rui/yipai/mapper/WordsInfoMapper.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,12 +59,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/yipai-master/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="Push.Settings">
     <option name="SHOW_DETAILS_PANEL" value="false" />
@@ -80,17 +85,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,7 +136,8 @@
       <workItem from="1711454717883" duration="6309000" />
       <workItem from="1711462950981" duration="56000" />
       <workItem from="1711463029152" duration="46000" />
-      <workItem from="1711463137267" duration="785000" />
+      <workItem from="1711463137267" duration="2114000" />
+      <workItem from="1711465293388" duration="1114000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1711456555876</created>
@@ -172,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711462322050</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="113">
+      <created>1711464206993</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711464206993</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

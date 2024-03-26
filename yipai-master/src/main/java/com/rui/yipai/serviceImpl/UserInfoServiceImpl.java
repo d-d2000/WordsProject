@@ -48,7 +48,7 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
         QueryWrapper<UserInfo> userInfoMapperQueryWrapper = new QueryWrapper<>();
         userInfoMapperQueryWrapper.eq("user_name",userName);
         List<UserInfo> userInfos = userInfoMapper.selectList(userInfoMapperQueryWrapper);
-        boolean flag = null != userInfos.get(0);
+        boolean flag = 0== userInfos.size();
         HashMap<String, Object> hashMap = new HashMap<>();
         if(flag) {
             hashMap.put("success",false);

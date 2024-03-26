@@ -1,12 +1,14 @@
 package com.rui.yipai.controller;
 
 import com.rui.yipai.entity.WordsInfo;
+import com.rui.yipai.mapper.WordsInfoMapper;
 import com.rui.yipai.service.WordsInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * <p>
@@ -22,6 +24,8 @@ public class WordsInfoController {
 
     @Autowired
     WordsInfoService wordsInfoService;
+    @Autowired
+    WordsInfoMapper wordsInfoMapper;
 
     @RequestMapping("/add")
     public HashMap<String,Object> addWords(WordsInfo wordsInfo) {
@@ -41,6 +45,11 @@ public class WordsInfoController {
     @RequestMapping("/getWords")
     public HashMap<String,Object> getWords(int start,int limit) {
         return wordsInfoService.getWords(start,limit);
+    }
+
+    @RequestMapping("/getRandomWords")
+    public List<WordsInfo> getRandomWords() {
+        return wordsInfoMapper.selectRandomWords();
     }
 
 }
