@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a07b5ef1-7ae9-4904-aabe-6ccc38cfaeea" name="Default Changelist" comment="111">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/bubei.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sys_word.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/EnglishStudyWebApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/common/WordIdx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/config/MybatisPlusConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/config/RedirectConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/config/SaTokenConfigure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/controller/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/controller/CollectionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/controller/ReviewSetController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/controller/StudySetController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/controller/WordController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/controller/mainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/mapper/BookMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/mapper/CollectionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/mapper/ReviewSetMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/mapper/StudySetMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/mapper/WordMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/model/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/model/Code.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/model/Collection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/model/ReviewSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/model/StudySet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/model/Word.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/model/WordResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/service/CollectionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/service/ReviewSetService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/service/SmsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/service/StudySetService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/service/WordService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/serviceImpl/BookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/serviceImpl/CollectionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/serviceImpl/ReviewSetServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/serviceImpl/SmsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/serviceImpl/StudySetServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/serviceImpl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/serviceImpl/WordServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/util/RedisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/util/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/util/ResultCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hzu/englishstudyweb/util/SerializeUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jar/zhenzisms-2.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BookMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CollectionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ReviewSetMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StudySetMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/WordMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/CET-4-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/CET-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/CET-6-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/CET-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/bg.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/book.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/changePassword.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/review.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/study.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/book.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/changePassword.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/collection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/review.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/study.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/hzu/englishstudyweb/CollectionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/hzu/englishstudyweb/EnglishStudyWebApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/hzu/englishstudyweb/ReviewSetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/hzu/englishstudyweb/StudySetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/hzu/englishstudyweb/UserTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="2bf735d7-5062-476e-822d-3672c6777353" />
+        <option name="url" value="https://github.com/d-d2000/WordsProject.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\仓库" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../破解版安装包/apache-maven-3.8.1" />
+        <option name="userSettingsFile" value="E:\破解版安装包\apache-maven-3.8.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2e4OTalZ2Rm6JeslFU4X1esE33V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\sh\yipai-master\src\main\java\com\rui\yipai" />
+      <recent name="E:\sh\yipai-master\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.UserGenerator">
+    <configuration name="UserGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rui.yipai.config.UserGenerator" />
+      <module name="yipai" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rui.yipai.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YipaiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="yipai" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rui.yipai.MyWordsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UserGenerator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a07b5ef1-7ae9-4904-aabe-6ccc38cfaeea" name="Default Changelist" comment="" />
+      <created>1711160393801</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711160393801</updated>
+      <workItem from="1711160396910" duration="635000" />
+      <workItem from="1711161048679" duration="5546000" />
+      <workItem from="1711171986107" duration="129000" />
+      <workItem from="1711174749118" duration="1605000" />
+      <workItem from="1711176713928" duration="740000" />
+      <workItem from="1711177472290" duration="374000" />
+      <workItem from="1711177924367" duration="2249000" />
+      <workItem from="1711180209013" duration="797000" />
+      <workItem from="1711182361152" duration="673000" />
+      <workItem from="1711189098455" duration="645000" />
+      <workItem from="1711361856853" duration="7828000" />
+      <workItem from="1711379222074" duration="6814000" />
+      <workItem from="1711454717883" duration="2177000" />
+    </task>
+    <task id="LOCAL-00001" summary="111">
+      <created>1711456555876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711456555876</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="111" />
+    <option name="LAST_COMMIT_MESSAGE" value="111" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
