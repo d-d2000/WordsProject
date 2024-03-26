@@ -79,7 +79,7 @@ public class HistoryInfoServiceImpl extends ServiceImpl<HistoryInfoMapper, Histo
         queryWrapper.eq("user_info_oid",oid);
         Page<HistoryInfo> historyInfoPage1 = historyInfoMapper.selectPage(historyInfoPage, queryWrapper);
         hashMap.put("success",true);
-        hashMap.put("msg","修改成功！");
+        hashMap.put("msg","查询成功！");
         hashMap.put("data",historyInfoPage1);
         return hashMap;
     }

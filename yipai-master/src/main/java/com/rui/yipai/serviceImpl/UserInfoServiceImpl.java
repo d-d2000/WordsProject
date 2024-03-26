@@ -88,7 +88,7 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
         userInfo.setUserOid(oid);
         userInfoMapper.updateById(userInfo);
         hashMap.put("success",true);
-        hashMap.put("msg","创建成功！");
+        hashMap.put("msg","更新成功！");
         hashMap.put("data",userInfo);
         return hashMap;
     }

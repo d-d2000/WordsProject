@@ -22,8 +22,8 @@ public interface WordsInfoMapper extends BaseMapper<WordsInfo> {
     List<WordsInfo> selectRandomWords();
 
     @Select("select count(new_words) as c1,words_state from words_info where 1 = 1 group by words_state")
-    List<WordsInfo> selectStateWords();
+    List<Object> selectStateWords();
 
     @Select("select count(new_words) as c2,create_time from words_info where 1 = 1 group by create_time")
-    List<WordsInfo> selectTimeWords();
+    List<Object> selectTimeWords();
 }

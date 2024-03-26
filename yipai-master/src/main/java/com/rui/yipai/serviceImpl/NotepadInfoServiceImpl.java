@@ -78,7 +78,7 @@ public class NotepadInfoServiceImpl extends ServiceImpl<NotepadInfoMapper, Notep
         queryWrapper.eq("user_info_oid",oid);
         Page<NotepadInfo> notepadInfoPage1 = notepadInfoMapper.selectPage(notepadInfoPage, queryWrapper);
         hashMap.put("success",true);
-        hashMap.put("msg","修改成功！");
+        hashMap.put("msg","查询成功！");
         hashMap.put("data",notepadInfoPage1);
         return hashMap;
     }
