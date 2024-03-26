@@ -1,6 +1,10 @@
 package com.rui.yipai.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.rui.yipai.entity.UserInfo;
+import com.rui.yipai.entity.WordsInfo;
+import com.rui.yipai.mapper.UserInfoMapper;
 import com.rui.yipai.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -59,8 +63,21 @@ public class UserInfoController {
         return userInfoService.updateUser(userInfo);
     }
 
+
+    @Autowired
+    UserInfoMapper userInfoMapper;
+
     @RequestMapping("getAllUser")
-    public List<UserInfo> updateUser() {
-        return userInfoService.list();
+    public HashMap<String, Object>  updateUser(int start,int limit) {
+        Page<UserInfo> userInfoPage = new Page<>();
+        userInfoPage.setCurrent(start);
+        userInfoPage.setSize(limit);
+        QueryWrapper<UserInfo> queryWrapper = new QueryWrapper<>();
+        Page<UserInfo> wordsInfoPage1 = userInfoMapper.selectPage(userInfoPage, queryWrapper);
+        HashMap<String, Object> hashMap = new HashMap<>();
+        hashMap.put("success",true);
+        hashMap.put("msg","修改成功！");
+        hashMap.put("data",wordsInfoPage1);
+        return hashMap;
     }
 }
