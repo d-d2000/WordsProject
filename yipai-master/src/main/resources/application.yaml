@@ -1,0 +1,33 @@
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 3306
+    database: 0
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/yipai?useSSL=false&useUnicode=true&characterEncoding=UTF-8&tinyInt1isBit=false
+      username: root
+      password: root
+  mvc:
+    async:
+      dispatch-options-request: true
+
+server:
+  port: 8088
+
+mybatis-plus:
+  # MyBatis????????
+  mapper-locations: classpath*:mapper/*Mapper.xml
+  global-config:
+    db-config:
+      #开启驼峰命名
+      table-underline: true
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl   #日志输出
+
+#pagehelper分页插件配置
+pagehelper:
+  helperDialect: mysql
+  reasonable: false #禁用合理化
+  supportMethodsArguments: true
+  params: count=countSql
