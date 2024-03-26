@@ -10,6 +10,6 @@ import org.springframework.stereotype.Component;
 public class Condition {
     private int c1;
     private int c2;
-    private String words_state;
+    private Boolean words_state;
     private String create_time;
 }
