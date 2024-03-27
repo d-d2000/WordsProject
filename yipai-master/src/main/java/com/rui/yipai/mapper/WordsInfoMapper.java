@@ -25,6 +25,6 @@ public interface WordsInfoMapper extends BaseMapper<WordsInfo> {
     @Select("select count(new_words) as c1,words_state from words_info where 1 = 1 group by words_state")
     List<Condition> selectStateWords();
 
-    @Select("select count(new_words) as c2,create_time from words_info where 1 = 1 group by create_time")
+    @Select("SELECT COUNT(new_words) as c2,create_time FROM words_info WHERE MONTH(create_time) = MONTH(CURRENT_DATE()) AND YEAR(create_time) = YEAR(CURRENT_DATE()) GROUP BY create_time")
     List<Condition> selectTimeWords();
 }
